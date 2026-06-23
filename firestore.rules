@@ -1,0 +1,11 @@
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // IntegraLife Rubia / XMOV - Orquestração Global
+    // Liberação total para estabilidade de prototipagem e desenvolvimento de multi-sessões
+    match /{document=**} {
+      allow read, write: if true;
+    }
+  }
+}
