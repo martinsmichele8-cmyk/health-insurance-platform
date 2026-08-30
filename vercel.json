@@ -1,0 +1,6 @@
+{
+  "framework": null,
+  "installCommand": "corepack enable && pnpm install --frozen-lockfile",
+  "buildCommand": "PORT=3000 BASE_PATH=/ pnpm --filter @workspace/seguradora-dashboard run build",
+  "outputDirectory": "artifacts/seguradora-dashboard/dist/public"
+}
